@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+import EstructuraDeDatos.LinkedList;
+
 public class ArchivoTxT {
 	
 	//--------------------------------------------------
@@ -36,7 +38,8 @@ public class ArchivoTxT {
 	        //leemos la primera linea
 	        String linea =  br.readLine();
 	        //creamos la matriz vacia
-	        char[][] = new char[8][11];
+	        //char[][] = new char[8][11];
+	        LinkedList lChar = new LinkedList();
 	        //contador
 	        int contador = 0;
 	        while(linea != null){
@@ -44,7 +47,7 @@ public class ArchivoTxT {
 	            //recorremos el arrar de string
 	            for (int i = 0; i<values.length; i++) {
 	                //se obtiene el primer caracter de el arreglo de strings
-	                char[contador][i] = values[i].charAt(0);
+	                //char[contador][i] = values[i].charAt(0);
 	            }
 	            contador++;
 	            linea = br.readLine();
