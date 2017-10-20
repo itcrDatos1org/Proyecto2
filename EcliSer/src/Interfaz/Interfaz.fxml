@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="591.0" prefWidth="882.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111">
+   <children>
+      <BorderPane layoutX="-4.0" prefHeight="591.0" prefWidth="882.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox prefHeight="39.0" prefWidth="882.0" style="-fx-background-color: #D4AC0D;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="45.0" prefWidth="246.0" text="Plugin Eclipser" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <Pane BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="550.0" prefWidth="196.0">
+                     <children>
+                        <TableView blendMode="SRC_ATOP" prefHeight="517.0" prefWidth="196.0" style="-fx-background-color: #58D68D;">
+                          <columns>
+                            <TableColumn editable="false" prefWidth="195.0" sortable="false" text="Codigo" />
+                          </columns>
+                        </TableView>
+                        <HBox prefHeight="37.0" prefWidth="196.0">
+                           <children>
+                              <Button fx:id="btnAnterior" alignment="CENTER" blendMode="SRC_ATOP" contentDisplay="BOTTOM" mnemonicParsing="false" prefHeight="49.0" prefWidth="98.0" text="ANTERIOR">
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="btnSiguiente" alignment="CENTER" blendMode="SRC_ATOP" mnemonicParsing="false" prefHeight="53.0" prefWidth="98.0" text="SIGUIENTE" textOverrun="CENTER_ELLIPSIS">
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <Pane prefHeight="552.0" prefWidth="896.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+         </center>
+         <right>
+            <VBox prefHeight="552.0" prefWidth="232.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="301.0" prefWidth="232.0" style="-fx-background-color: #CA6F1E;">
+                     <children>
+                        <TableView fx:id="C_variables" prefHeight="299.0" prefWidth="233.0" style="-fx-background-color: #2874A6;">
+                          <columns>
+                            <TableColumn editable="false" prefWidth="232.0" sortable="false" text="Variables" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="257.0" prefWidth="232.0" style="-fx-background-color: #138D75;">
+                     <children>
+                        <Button fx:id="btnStepInto" layoutY="2.0" mnemonicParsing="false" prefWidth="116.0" text="Step Into" />
+                        <Button fx:id="btnStepOver" layoutX="116.0" layoutY="2.0" mnemonicParsing="false" prefWidth="116.0" text="Step Over" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
