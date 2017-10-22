@@ -2,7 +2,6 @@ package EstructuraDeDatos;
 
 public class Nodo <T>{
 	private T dato;
-	
 	private Nodo<T> siguiente;
 	
 	
